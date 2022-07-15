@@ -1,0 +1,17 @@
+import {createContext} from 'react'
+import useImageList from '../hooks/useImageList'
+
+
+const ImageContext = createContext(null)
+
+const ImageProvider = ({children}) => {
+  const imageData = useImageList()
+  return (
+    <ImageContext.Provider value={imageData}>
+      {children}
+    </ImageContext.Provider>
+  )
+}
+
+export { ImageProvider }
+export default ImageContext;
