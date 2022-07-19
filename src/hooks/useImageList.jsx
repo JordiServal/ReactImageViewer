@@ -1,9 +1,13 @@
 import { useState } from "react";
 
-export default useImageList = () => {
+const useImageList = () => {
   const [images, setImages] = useState([]);
+  const [modal, setModal] = useState(false);
 
   return {
-    iamges, setImages,
+    images, setImages,
+    modal, setModal
   }
 }
+
+export {useImageList}

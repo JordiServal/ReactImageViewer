@@ -1,8 +1,10 @@
-export default Modal = () => {
+import { useContext } from "react";
+import ImageContext from "../../contexts/imageContext";
 
-  return (
-    <div className='modal'>
-
-    </div>
-  )
+const Modal = () => {
+  const {modal} = useContext(ImageContext);
+  return (<>
+    {modal && <div className='modal'></div>}
+  </>)
 }
+export default Modal

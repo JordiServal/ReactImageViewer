@@ -1,8 +1,12 @@
-import {ImageProvider} from '../../contexts/ImageContext';
+import {ImageProvider} from '../../contexts/imageContext';
+import ImageContainer from '../ImageContainer';
+
 const ImageViewer = ({ images }) => {
-  return <ImageProvider>
-    <ImageContainer images={images} />
-  </ImageProvider>
+  return (
+    <ImageProvider images={images}>
+      <ImageContainer/>
+    </ImageProvider>
+  )
 }
 
 export default ImageViewer;

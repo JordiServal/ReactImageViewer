@@ -1,11 +1,15 @@
-import {createContext} from 'react'
-import useImageList from '../hooks/useImageList'
+import {createContext, useEffect} from 'react'
+import {useImageList} from '../hooks/useImageList'
 
 
 const ImageContext = createContext(null)
 
-const ImageProvider = ({children}) => {
+const ImageProvider = ({children, images}) => {
   const imageData = useImageList()
+  useEffect(() => {
+    imageData.setImages(images)
+  }, [])
+
   return (
     <ImageContext.Provider value={imageData}>
       {children}
