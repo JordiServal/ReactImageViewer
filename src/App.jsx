@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Image from './components/Image'
+import ImageViewer from './components/ImageViewer'
 import './App.css'
 
 const images = [
@@ -11,7 +10,7 @@ const images = [
 function App() {
   return (
     <div className="App">
-      { images.map((img, index) => <Image key={index} src={img.src} className="logo" alt={img.alt} />)}
+      <ImageViewer images={images} />
     </div>
   )
 }
