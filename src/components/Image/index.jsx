@@ -4,8 +4,7 @@ import ImageContext from "../../contexts/imageContext";
 export default Image = ({ src, alt='', className='' }) => {
   const {modal, setModal} = useContext(ImageContext);
   const click = () => {
-    console.log('clicked')
-    setModal(!modal);
+    setModal(true);
   }
   return <img src={src} alt={alt} className={className} onClick={click} />
 }

@@ -3,8 +3,8 @@ import ImageViewer from './components/ImageViewer'
 import './App.css'
 
 const images = [
-  { src: reactLogo, alt: 'React Logo' },
-  { src: "/vite.svg", alt: 'React Logo' },
+  { src: reactLogo, alt: 'React Logo', thumb: reactLogo },
+  { src: "/vite.svg", alt: 'React Logo', thumb: "/vite.svg"},
 ]
 
 function App() {
