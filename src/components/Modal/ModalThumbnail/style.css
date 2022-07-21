@@ -1,0 +1,15 @@
+.modal-thumb-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-thumb {
+  width: 4vw;
+}
+
+.highlight {
+  background: #f5f5f5;
+}

@@ -9,8 +9,7 @@ const ImageContainer = () => {
   
   return <>
   <div className='container'>
-
-  { images.map((img, index) => <Image key={index} src={img.src} className="logo" alt={img.alt} />)}
+    { images.map((img, index) => <Image key={index} src={img.src} className="logo" alt={img.alt} />)}
   </div>
   <Modal />
   </>

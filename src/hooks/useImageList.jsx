@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const useImageList = () => {
   const [images, setImages] = useState([]);
@@ -10,17 +10,23 @@ const useImageList = () => {
    * @param {boolean} direction false for previous, true for next
    */
   const changeCurrent = (direction) => {
-    const indexAux = currentIndex + (direction ? 1 : -1);
-    if(indexAux >= 0 && indexAux < images.length) {
-      setCurrentIndex();
-      setCurrentImage(images[currentIndex]);
-    }
+      setCurrentIndex(Math.abs((currentIndex + (direction ? 1 : -1)) % images.length));
   }
+
+  useEffect(() => {
+    if(images[currentIndex]) setCurrentImage(images[currentIndex]);    
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if(images.length > 0) setCurrentImage(images[currentIndex]);
+  }, [images]);
 
   return {
     images, setImages,
     modal, setModal,
-    changeCurrent
+    changeCurrent,
+    currentImage,
+    currentIndex
   }
 }
 

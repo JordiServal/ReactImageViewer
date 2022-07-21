@@ -6,15 +6,16 @@ import ModalThumbnail from './ModalThumbnail';
 import ModalMain from './ModalMain';
 
 const Modal = () => {
-  const {modal, setModal, images} = useContext(ImageContext);
+  const {modal, setModal} = useContext(ImageContext);
   const close = () => {
     setModal(false);
   }
   return (<>
     {modal && 
-      <div className='modal' onClick={close}>
+      <div className='modal'>
+        <div className='modal-shadow' onClick={close}/>
         <div className='modal-content'>
-          <img src={closeImg} className="modal-close"/>
+          <img src={closeImg} className="modal-close" onClick={close}/>
           <ModalMain/>
           <ModalThumbnail/>
         </div>

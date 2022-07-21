@@ -1,10 +1,12 @@
-import reactLogo from './assets/react.svg'
+
 import ImageViewer from './components/ImageViewer'
 import './App.css'
 
 const images = [
-  { src: reactLogo, alt: 'React Logo', thumb: reactLogo },
+  { src: "/react.svg", alt: 'React Logo' },
   { src: "/vite.svg", alt: 'React Logo', thumb: "/vite.svg"},
+  { src: "/Giordi.jpeg", alt: 'Giordi', thumb: null},
+  { src: "/Bonsai.jpeg", alt: 'Bonsai', thumb: null},
 ]
 
 function App() {

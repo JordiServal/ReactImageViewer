@@ -2,7 +2,7 @@ import { useContext } from "react";
 import ImageContext from "../../contexts/imageContext";
 
 export default Image = ({ src, alt='', className='' }) => {
-  const {modal, setModal} = useContext(ImageContext);
+  const {setModal} = useContext(ImageContext);
   const click = () => {
     setModal(true);
   }
