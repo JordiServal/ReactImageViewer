@@ -8,8 +8,12 @@
 
 .modal-thumb {
   width: 4vw;
+  max-height: 4vw;
+  margin: 1vw;
+  object-fit: contain;
+  will-change: filter;
 }
 
-.highlight {
-  background: #f5f5f5;
+.modal-thumb:hover, .highlight {
+  filter: drop-shadow(0 0 2em #fff);
 }

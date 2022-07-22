@@ -26,7 +26,8 @@ const useImageList = () => {
     modal, setModal,
     changeCurrent,
     currentImage,
-    currentIndex
+    currentIndex,
+    setCurrentIndex
   }
 }
 
