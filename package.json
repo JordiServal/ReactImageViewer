@@ -1,8 +1,8 @@
 {
-  "name": "react-image-viewer",
-  "private": true,
-  "version": "0.0.0",
+  "name": "reactjs-image-viewer",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A React component for image viewer",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

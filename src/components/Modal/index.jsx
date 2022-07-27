@@ -6,7 +6,7 @@ import ModalThumbnail from './ModalThumbnail';
 import ModalMain from './ModalMain';
 
 const Modal = () => {
-  const {modal, setModal} = useContext(ImageContext);
+  const {modal, setModal, showCarrussel} = useContext(ImageContext);
   const close = () => {
     setModal(false);
   }
@@ -17,7 +17,7 @@ const Modal = () => {
         <div className='modal-content'>
           <img src={closeImg} className="modal-close" onClick={close}/>
           <ModalMain/>
-          <ModalThumbnail/>
+          {showCarrussel && <ModalThumbnail/>}
         </div>
       </div>}
   </>)

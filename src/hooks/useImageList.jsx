@@ -5,6 +5,12 @@ const useImageList = () => {
   const [modal, setModal] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(null);
+  const [viewImages, setViewImages] = useState(0)
+  const [containerClass, setContainerClass] = useState('')
+  const [imageClass, setImageClass] = useState('')
+  const [thumbClass, setThumbClass] = useState('')
+  const [thumbImageClass, setThumbImageClass] = useState('')
+  const [showCarrusel, setShowCarrusel] = useState(true)
 
   /**
    * @param {boolean} direction false for previous, true for next
@@ -27,7 +33,13 @@ const useImageList = () => {
     changeCurrent,
     currentImage,
     currentIndex,
-    setCurrentIndex
+    setCurrentIndex,
+    viewImages, setViewImages,
+    containerClass, setContainerClass,
+    imageClass, setImageClass,
+    thumbClass, setThumbClass,
+    thumbImageClass, setThumbImageClass,
+    showCarrusel, setShowCarrusel
   }
 }
 
