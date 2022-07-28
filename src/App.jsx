@@ -12,7 +12,7 @@ const images = [
 function App() {
   return (
     <div className="App">
-      <ImageViewer images={images} showCarrussel={false} />
+      <ImageViewer images={images} />
     </div>
   )
 }

@@ -10,14 +10,14 @@ const ModalMain = () => {
     setModal,
     thumbClass,
     thumbImageClass,
-    showCarrussel,
+    showCarrusel,
   } = useContext(ImageContext)
 
   return (
     <div
       className={thumbClass !== "" ? thumbClass : style.modal_main_container}
     >
-      {showCarrussel && (
+      {showCarrusel && (
         <img
           src={arrowImg}
           className={`${style.modal_arrow} ${style.arrow_left}`}
@@ -30,7 +30,7 @@ const ModalMain = () => {
         className={thumbImageClass !== "" ? thumbImageClass : style.modal_main}
         onClick={() => setModal(false)}
       />
-      {showCarrussel && (
+      {showCarrusel && (
         <img
           src={arrowImg}
           className={`${style.modal_arrow} ${style.arrow_right}`}
