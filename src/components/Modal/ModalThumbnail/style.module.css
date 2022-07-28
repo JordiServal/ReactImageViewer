@@ -1,0 +1,19 @@
+.modal_thumb_container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal_thumb {
+  width: 4vw;
+  max-height: 4vw;
+  margin: 1vw;
+  object-fit: contain;
+  will-change: filter;
+}
+
+.modal_thumb:hover, .highlight {
+  filter: drop-shadow(0 0 2em #fff);
+}

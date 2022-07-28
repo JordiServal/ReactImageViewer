@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.modal-shadow {
+.modal_shadow {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,12 +21,12 @@
   align-items: center;
 }
 
-.modal-content {
+.modal_content {
   width: 100%;
   height: 100%;
 }
 
-.modal-close {
+.modal_close {
   position: absolute;
   top: 5px;
   right: 5px;
