@@ -16,9 +16,11 @@ const useImageList = () => {
    * @param {boolean} direction false for previous, true for next
    */
   const changeCurrent = (direction) => {
+    console.log(currentIndex, images.length)
     setCurrentIndex(
-      Math.abs((currentIndex + (direction ? 1 : -1)) % images.length)
-    )
+      (currentIndex + (direction ? 1 : -1)) % images.length)
+      
+      console.log(currentIndex)
   }
 
   useEffect(() => {
