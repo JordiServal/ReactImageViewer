@@ -3,7 +3,7 @@ import { useImageList } from "../../hooks/useImageList"
 import Modal from "../Modal"
 import { useContext, useEffect } from "react"
 import ImageContext from "../../contexts/imageContext"
-import style from "./style.module.css"
+import "./style.css"
 
 const ImageContainer = () => {
   const { images, viewImages, containerClass, imageClass } =
@@ -18,7 +18,7 @@ const ImageContainer = () => {
               <Image
                 key={index}
                 src={img.src}
-                className={imageClass !== "" ? imageClass : style.logo}
+                className={imageClass !== "" ? imageClass : "logo"}
                 alt={img.alt}
                 index={index}
               />

@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import ImageContext from "../../../contexts/imageContext"
-import style from "./style.module.css"
+import "./style.css"
 import arrowImg from "../../../assets/arrow.svg"
 
 const ModalMain = () => {
@@ -15,25 +15,25 @@ const ModalMain = () => {
 
   return (
     <div
-      className={thumbClass !== "" ? thumbClass : style.modal_main_container}
+      className={thumbClass !== "" ? thumbClass : "modal_main_container"}
     >
       {showCarrusel && (
         <img
           src={arrowImg}
-          className={`${style.modal_arrow} ${style.arrow_left}`}
+          className={`modal_arrow arrow_left`}
           onClick={() => changeCurrent(false)}
         />
       )}
       <img
         src={currentImage.src}
         alt={currentImage.alt}
-        className={thumbImageClass !== "" ? thumbImageClass : style.modal_main}
+        className={thumbImageClass !== "" ? thumbImageClass : "modal_main"}
         onClick={() => setModal(false)}
       />
       {showCarrusel && (
         <img
           src={arrowImg}
-          className={`${style.modal_arrow} ${style.arrow_right}`}
+          className={`modal_arrow arrow_right`}
           onClick={() => changeCurrent(true)}
         />
       )}

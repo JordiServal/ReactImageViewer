@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import ImageContext from "../../contexts/imageContext"
-import style from "./style.module.css"
+import "./style.css"
 import closeImg from "../../assets/close.svg"
 import ModalThumbnail from "./ModalThumbnail"
 import ModalMain from "./ModalMain"
@@ -14,12 +14,12 @@ const Modal = () => {
   return (
     <>
       {modal && (
-        <div className={style.modal}>
-          <div className={style.modal_shadow} onClick={close} />
-          <div className={style.modal_content}>
+        <div className={"modal"}>
+          <div className={"modal_shadow"} onClick={close} />
+          <div className={"modal_content"}>
             <img
               src={closeImg}
-              className={style.modal_close}
+              className={"modal_close"}
               onClick={close}
             />
             <ModalMain />
