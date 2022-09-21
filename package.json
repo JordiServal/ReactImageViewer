@@ -1,6 +1,6 @@
 {
   "name": "reactjs-image-viewer",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "type": "module",
   "description": "A React component for image viewer",
   "scripts": {
