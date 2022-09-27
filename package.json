@@ -26,10 +26,7 @@
   "module": "./dist/reactjs-image-viewer.es.js",
   "exports": {
     ".": {
-      "import": [
-        "./dist/reactjs-image-viewer.es.js",
-        "./dist/style.css"
-      ],
+      "import": "./dist/reactjs-image-viewer.es.js",
       "require": "./dist/reactjs-image-viewer.cjs.js"
     },
     "./package.json": "./package.json"
